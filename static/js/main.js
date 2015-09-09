@@ -2,6 +2,9 @@
 var React = require('react');
 
 module.exports = React.createClass({displayName: "exports",
+    propTypes: {
+        onUpdate: React.PropTypes.func.isRequired
+    },
     create: function(e){
         e.preventDefault();
         var firstName = this.refs.firstName.getDOMNode().value;
@@ -15,7 +18,8 @@ module.exports = React.createClass({displayName: "exports",
             moves:moves,
             description:description,
             imgUrl:imgUrl
-        }
+        };
+        this.props.onUpdate(fighter)
         return console.log(fighter)
     },
     render: function(){
@@ -92,16 +96,27 @@ var Navigation = require('./Navigation');
 var CreateFighter = require('./CreateFighter');
 
 module.exports = React.createClass({displayName: "exports",
-  render: function(){
-    return (
-        React.createElement("div", null, 
-            React.createElement(Navigation, null), 
-            React.createElement(SearchForm, null), 
-            React.createElement(CreateFighter, null)
+    getInitialState: function(){
+        return {newFighter:'',createdFighter:''}
+    },
+    createFighter: function(fighter){
+        this.setState({newFighter:fighter});
+        // console.log(this.state.newFighter.lastName);
+        var self = this;
+        var ajax = new XMLHttpRequest();
 
+
+    },
+    render: function(){
+        return (
+            React.createElement("div", null, 
+                React.createElement(Navigation, null), 
+                React.createElement(SearchForm, null), 
+                React.createElement(CreateFighter, {onUpdate: this.createFighter})
+
+            )
         )
-    )
-  }
+    }
 });
 
 },{"./CreateFighter":1,"./Navigation":2,"./SearchForm":3,"react":161}],5:[function(require,module,exports){

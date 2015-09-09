@@ -1,6 +1,9 @@
 var React = require('react');
 
 module.exports = React.createClass({
+    propTypes: {
+        onUpdate: React.PropTypes.func.isRequired
+    },
     create: function(e){
         e.preventDefault();
         var firstName = this.refs.firstName.getDOMNode().value;
@@ -14,7 +17,8 @@ module.exports = React.createClass({
             moves:moves,
             description:description,
             imgUrl:imgUrl
-        }
+        };
+        this.props.onUpdate(fighter)
         return console.log(fighter)
     },
     render: function(){
