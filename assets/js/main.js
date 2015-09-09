@@ -4,4 +4,3 @@ var Navigation = require('./components/Navigation');
 
 React.render(<App />, document.getElementById('container'));
 
-
