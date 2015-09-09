@@ -17,7 +17,7 @@ module.exports = React.createClass({
                 var data = JSON.parse(this.responseText);
                 self.setState({createdFighter:data.results});
             } catch(e) {
-                self.setState(createdFighter:'');
+                self.setState({createdFighter:''});
             }
         });
         ajax.open('POST','our api url' + '/:' + newFighter.firstName + '/:' + newFighter.lastName + '/:' + newFighter.moves + '/:' + newFighter.description + '/:' + newFighter.imgUrl);

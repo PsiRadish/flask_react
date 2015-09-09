@@ -1,5 +1,44 @@
 (function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof require=="function"&&require;if(!u&&a)return a(o,!0);if(i)return i(o,!0);var f=new Error("Cannot find module '"+o+"'");throw f.code="MODULE_NOT_FOUND",f}var l=n[o]={exports:{}};t[o][0].call(l.exports,function(e){var n=t[o][1][e];return s(n?n:e)},l,l.exports,e,t,n,r)}return n[o].exports}var i=typeof require=="function"&&require;for(var o=0;o<r.length;o++)s(r[o]);return s})({1:[function(require,module,exports){
 var React = require('react');
+var SearchForm = require('./SearchForm');
+var Navigation = require('./Navigation');
+var CreateFighter = require('./CreateFighter');
+
+module.exports = React.createClass({displayName: "exports",
+    getInitialState: function(){
+        return {newFighter:'',createdFighter:''}
+    },
+    createFighter: function(fighter){
+        this.setState({newFighter:fighter});
+        // console.log(this.state.newFighter.lastName);
+        var self = this;
+        var ajax = new XMLHttpRequest();
+        ajax.addEventListener('load',function(){
+            try {
+                var data = JSON.parse(this.responseText);
+                self.setState({createdFighter:data.results});
+            } catch(e) {
+                self.setState({createdFighter:''});
+            }
+        });
+        ajax.open('POST','our api url' + '/:' + newFighter.firstName + '/:' + newFighter.lastName + '/:' + newFighter.moves + '/:' + newFighter.description + '/:' + newFighter.imgUrl);
+        ajax.send();
+
+    },
+    render: function(){
+        return (
+            React.createElement("div", null, 
+                React.createElement(Navigation, null), 
+                React.createElement(SearchForm, null), 
+                React.createElement(CreateFighter, {onUpdate: this.createFighter})
+
+            )
+        )
+    }
+});
+
+},{"./CreateFighter":2,"./Navigation":3,"./SearchForm":4,"react":161}],2:[function(require,module,exports){
+var React = require('react');
 
 module.exports = React.createClass({displayName: "exports",
     propTypes: {
@@ -40,7 +79,7 @@ module.exports = React.createClass({displayName: "exports",
     }
 });
 
-},{"react":161}],2:[function(require,module,exports){
+},{"react":161}],3:[function(require,module,exports){
 var React = require('react');
 
 module.exports = React.createClass({displayName: "exports",
@@ -61,7 +100,7 @@ module.exports = React.createClass({displayName: "exports",
     }
 })
 
-},{"react":161}],3:[function(require,module,exports){
+},{"react":161}],4:[function(require,module,exports){
 var React = require('react');
 
 module.exports = React.createClass({displayName: "exports",
@@ -89,44 +128,14 @@ module.exports = React.createClass({displayName: "exports",
     }
 });
 
-},{"react":161}],4:[function(require,module,exports){
+},{"react":161}],5:[function(require,module,exports){
 var React = require('react');
-var SearchForm = require('./SearchForm');
-var Navigation = require('./Navigation');
-var CreateFighter = require('./CreateFighter');
-
-module.exports = React.createClass({displayName: "exports",
-    getInitialState: function(){
-        return {newFighter:'',createdFighter:''}
-    },
-    createFighter: function(fighter){
-        this.setState({newFighter:fighter});
-        // console.log(this.state.newFighter.lastName);
-        var self = this;
-        var ajax = new XMLHttpRequest();
-
-
-    },
-    render: function(){
-        return (
-            React.createElement("div", null, 
-                React.createElement(Navigation, null), 
-                React.createElement(SearchForm, null), 
-                React.createElement(CreateFighter, {onUpdate: this.createFighter})
-
-            )
-        )
-    }
-});
-
-},{"./CreateFighter":1,"./Navigation":2,"./SearchForm":3,"react":161}],5:[function(require,module,exports){
-var React = require('react');
-var UltimateShowdown = require('./components/UltimateShowdown.js');
+var App = require('./components/App');
 var Navigation = require('./components/Navigation');
 
-React.render(React.createElement(UltimateShowdown, null), document.getElementById('container'));
+React.render(React.createElement(App, null), document.getElementById('container'));
 
-},{"./components/Navigation":2,"./components/UltimateShowdown.js":4,"react":161}],6:[function(require,module,exports){
+},{"./components/App":1,"./components/Navigation":3,"react":161}],6:[function(require,module,exports){
 // shim for using process in browser
 
 var process = module.exports = {};
