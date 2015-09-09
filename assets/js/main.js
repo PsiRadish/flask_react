@@ -1,6 +1,7 @@
 var React = require('react');
-var App = require('./components/App');
+var UltimateShowdown = require('./components/UltimateShowdown.js');
+var Navigation = require('./components/Navigation');
 
-React.render(<App />, document.getElementById('container'));
+React.render(<UltimateShowdown />, document.getElementById('container'));
 
 

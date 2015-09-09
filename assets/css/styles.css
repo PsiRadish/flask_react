@@ -1,3 +1,7 @@
 body{
   background: blue;
 }
+
+div#fighterSearch {
+    margin-top:50px;
+}
