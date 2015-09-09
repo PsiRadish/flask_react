@@ -5,7 +5,24 @@ var CreateFighter = require('./CreateFighter');
 
 module.exports = React.createClass({
     getInitialState: function(){
-        return {newFighter:'',createdFighter:''}
+        return {createdFighter:'',newFighter:'',fighters:[]}
+    },
+    getAllFighters: function(){
+        var self = this;
+        console.log('getAllFighters has been called');
+        var ajax = new XMLHttpRequest();
+        ajax.addEventListener('load',function(){
+            try {
+                var data = JSON.parse(this.responseText);
+                self.setState({fighters:data});
+                console.log(this.state.fighters);
+            } catch(e) {
+                console.log('something went wrong with request')
+                self.setState({fighters:[]});
+            }
+        });
+        ajax.open('GET','/api/fighter',true);
+        ajax.send();
     },
     createFighter: function(fighter){
         this.setState({newFighter:fighter});
@@ -30,6 +47,7 @@ module.exports = React.createClass({
                 <Navigation />
                 <SearchForm />
                 <CreateFighter onUpdate={this.createFighter}/>
+                <button onClick={this.getAllFighters}>get fighters</button>
 
             </div>
         )
