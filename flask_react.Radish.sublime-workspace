@@ -1,0 +1,939 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"margin",
+				"margin-bottom"
+			],
+			[
+				"tex",
+				"text-decoration"
+			],
+			[
+				"List",
+				"ListShowCtrl"
+			],
+			[
+				"$route",
+				"$routeParams	AngularJS(DI)"
+			],
+			[
+				"r",
+				"routeFile"
+			],
+			[
+				"route",
+				"routePath"
+			],
+			[
+				"to",
+				"totalTasks"
+			],
+			[
+				"html",
+				"html	html"
+			],
+			[
+				"conn",
+				"connections"
+			],
+			[
+				"check",
+				"checkUpdateLine"
+			],
+			[
+				"sockets",
+				"socketsInLine"
+			],
+			[
+				"chec",
+				"checkUpdateLine"
+			],
+			[
+				"Db",
+				"DebateChat"
+			],
+			[
+				"border",
+				"border-radius"
+			],
+			[
+				"upda",
+				"updateQueue"
+			],
+			[
+				"v",
+				"votesOnChampion"
+			],
+			[
+				"disab",
+				"disableChatBox"
+			],
+			[
+				"disa",
+				"disableChatBox"
+			],
+			[
+				"post",
+				"postId"
+			],
+			[
+				"again",
+				"againstChanged"
+			],
+			[
+				"aga",
+				"againstChanged"
+			],
+			[
+				"scroll",
+				"scrollTop"
+			],
+			[
+				"auth",
+				"authorName"
+			],
+			[
+				"user",
+				"userId"
+			],
+			[
+				"us",
+				"userId"
+			],
+			[
+				"overfl",
+				"overflow-x: "
+			],
+			[
+				"use",
+				"userId"
+			],
+			[
+				"overf",
+				"overflow-y: "
+			],
+			[
+				"deb",
+				"debate-msg-padding"
+			],
+			[
+				"tit",
+				"titlePrefix"
+			],
+			[
+				"table-c",
+				"table-cell"
+			],
+			[
+				"visual",
+				"visualBounds"
+			],
+			[
+				"filter",
+				"filterTag"
+			],
+			[
+				"err",
+				"err"
+			],
+			[
+				"text",
+				"text-align"
+			],
+			[
+				"font",
+				"font-size: "
+			],
+			[
+				"prot",
+				"prototype"
+			],
+			[
+				"lineM",
+				"lineAlignment"
+			],
+			[
+				"Ali",
+				"Alignment"
+			],
+			[
+				"dirt",
+				"dirtySquares"
+			],
+			[
+				"Process",
+				"processGravity"
+			],
+			[
+				"dir",
+				"dirtySquares"
+			],
+			[
+				"grid",
+				"gridKey"
+			],
+			[
+				"matc",
+				"matchSquares"
+			],
+			[
+				"play",
+				"player2Score"
+			],
+			[
+				"move",
+				"movesMade"
+			],
+			[
+				"eve",
+				"eventData"
+			],
+			[
+				"newS",
+				"newSquares"
+			],
+			[
+				"doo",
+				"doomedQuark"
+			],
+			[
+				"vM",
+				"vMatchSquares"
+			],
+			[
+				"colM",
+				"colMatch"
+			],
+			[
+				"squ",
+				"squareA"
+			],
+			[
+				"direc",
+				"directionToSkip"
+			],
+			[
+				"match",
+				"matchingQuarks"
+			],
+			[
+				"swapD",
+				"swapDirectionB"
+			],
+			[
+				"stre",
+				"stretchMargin"
+			],
+			[
+				"sq",
+				"squareA"
+			],
+			[
+				"ani",
+				"animating"
+			],
+			[
+				"clic",
+				"clickedCoords"
+			],
+			[
+				"qu",
+				"quark"
+			],
+			[
+				"q",
+				"quark"
+			],
+			[
+				"ol",
+				"oldTurn"
+			],
+			[
+				"new",
+				"newTurn"
+			],
+			[
+				"sel",
+				"selected"
+			],
+			[
+				"cl",
+				"clickedQuark"
+			],
+			[
+				"bo",
+				"boardSelector"
+			],
+			[
+				"gameA",
+				"gameAreaSelector"
+			],
+			[
+				"backg",
+				"background-position"
+			],
+			[
+				"backgr",
+				"background-position"
+			],
+			[
+				"gra",
+				"gravUp"
+			],
+			[
+				"newT",
+				"newTaskInput"
+			],
+			[
+				"matchd",
+				"matchDiagonalDown"
+			],
+			[
+				"matchT",
+				"matchThirdColumn"
+			],
+			[
+				"matchS",
+				"matchSecondColumn"
+			],
+			[
+				"matchD",
+				"matchDiagonalUp"
+			],
+			[
+				"matchF",
+				"matchFirstColumn"
+			],
+			[
+				"mat",
+				"matchThirdColumn"
+			],
+			[
+				"conver",
+				"convertForm"
+			],
+			[
+				"marg",
+				"margin-right"
+			],
+			[
+				"merg",
+				"mergedArray"
+			],
+			[
+				"prime",
+				"primesList"
+			],
+			[
+				"rever",
+				"reverseMe"
+			],
+			[
+				"comp",
+				"computerWins"
+			],
+			[
+				"compu",
+				"computerMove"
+			],
+			[
+				"pl",
+				"playerMove"
+			],
+			[
+				"ran",
+				"randomPlay"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 279.0,
+		"last_filter": "java",
+		"selected_items":
+		[
+			[
+				"java",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"html",
+				"Set Syntax: HTML"
+			],
+			[
+				"new view",
+				"File: New View into File"
+			],
+			[
+				"javas",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"package",
+				"PackageResourceViewer: Open Resource"
+			],
+			[
+				"newv",
+				"File: New View into File"
+			],
+			[
+				"json",
+				"Set Syntax: JSON"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"install p",
+				"Package Control: Install Package"
+			],
+			[
+				"ejs",
+				"Set Syntax: HTML (EJS)"
+			],
+			[
+				"resource",
+				"PackageResourceViewer: Open Resource"
+			],
+			[
+				"view",
+				"File: New View into File"
+			],
+			[
+				"for",
+				"Snippet: for (…) {…}"
+			],
+			[
+				"packager",
+				"PackageResourceViewer: Open Resource"
+			],
+			[
+				"packa",
+				"Package Control: Install Package"
+			],
+			[
+				"unfold",
+				"Code Folding: Unfold All"
+			],
+			[
+				"indent",
+				"BracketHighlighter: Fold Bracket Content"
+			],
+			[
+				"sort",
+				"Sort Lines"
+			],
+			[
+				"javasc",
+				"Set Syntax: JavaScript"
+			]
+		],
+		"width": 780.0
+	},
+	"console":
+	{
+		"height": 221.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = 'eb2297e1a458f27d836c04bb0cbaf282' + 'd0e7a3098092775ccb37ca9d6b2e4b7d'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by) "
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/C/Users/Radish/Dev/GA_WDI/WDI_SEA_03_HOMEWORK/PsiRadish/Week11/hw_flask"
+	],
+	"file_history":
+	[
+		"/C/Users/Radish/Dev/Web/Node/quicklist/assets/styles/angular-ui-tree.css",
+		"/C/Users/Radish/Dev/Web/Node/quicklist/assets/js/dependencies/angular-ui-tree.js",
+		"/C/Users/Radish/Dev/Web/Node/quicklist/assets/lists/test/nest/TEST.json",
+		"/C/Users/Radish/Dev/Web/Node/quicklist/assets/lists/test/TEST.json",
+		"/C/Users/Radish/Dev/Web/Node/quicklist/assets/lists/TEST.json",
+		"/C/Users/Radish/Dev/GA_WDI/in-class/node/+sails/blenny3/assets/js/controllers/TestCtrl.js",
+		"/C/Users/Radish/Dev/Web/Node/angular-ui-tree-master/examples/css/app.css",
+		"/C/Users/Radish/Dev/GA_WDI/WDI_SEA_03_HOMEWORK/PsiRadish/Week09/hw_custom_directive/hw_directives.js",
+		"/C/Users/Radish/Dev/Web/Node/quicklist/assets/styles/styles.css",
+		"/C/Users/Radish/Dev/Web/Node/quicklist/assets/js/resources/ApiResources.js",
+		"/C/Users/Radish/Dev/GA_WDI/addressBookAPI/assets/views/person/show_experimental.html",
+		"/C/Users/Radish/Dev/Web/Node/angular-ui-tree-master/examples/index.html",
+		"/C/Users/Radish/Dev/Web/Node/angular-ui-tree-master/examples/js/basic-example.js",
+		"/C/Users/Radish/Dev/Web/Node/angular-ui-tree-master/examples/views/basic-example.html",
+		"/C/Users/Radish/Dev/Web/Node/quicklist/assets/views/list/show.html",
+		"/C/Users/Radish/Dev/GA_WDI/in-class/node/+sails/bloggy3/assets/js/filters/trustUrl.js",
+		"/C/Users/Radish/Dev/Web/Node/quicklist/assets/js/dependencies/subarray.js",
+		"/C/Users/Radish/Dev/Web/Node/quicklist/assets/js/controllers/HomeCtrl.js",
+		"/C/Users/Radish/Dev/Web/Node/angular-ui-tree-master/examples/views/task-example.html",
+		"/C/Users/Radish/Dev/Web/Node/quicklist/config/blueprints.js",
+		"/C/Users/Radish/Dev/Web/Node/quicklist/config/connections.js",
+		"/C/Users/Radish/Dev/Web/Node/quicklist/config/models.js",
+		"/C/Users/Radish/Dev/Web/Node/quicklist/config/routes.js",
+		"/C/Users/Radish/Dev/Web/Node/angular-ui-tree-master/examples/js/trees.js",
+		"/C/Users/Radish/Dev/Web/Node/angular-ui-tree-master/examples/js/tree.js",
+		"/C/Users/Radish/Dev/Web/Node/angular-ui-tree-master/examples/js/app.js",
+		"/C/Users/Radish/Dev/Web/Node/quicklist/api/controllers/PagesController.js",
+		"/C/Users/Radish/AppData/Roaming/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/C/Users/Radish/Dev/Web/Node/quicklist/package.json",
+		"/C/Users/Radish/Dev/GA_WDI/addressBookAPI/assets/styles/zzzzzz_app.css",
+		"/C/Users/Radish/Dev/Web/Node/quicklist/app.js",
+		"/C/Users/Radish/Dev/Web/Node/quicklist/.gitattributes",
+		"/C/Users/Radish/Dev/Web/Node/'quicklist/.gitattributes",
+		"/C/Users/Radish/Dev/GA_WDI/in-class/node/+sails/bloggy3/assets/js/app.js",
+		"/C/Users/Radish/Dev/GA_WDI/in-class/node/+sails/bloggy3/api/controllers/iTunesController.js",
+		"/C/Users/Radish/Dev/GA_WDI/in-class/node/+sails/bloggy3/config/policies.js",
+		"/C/Users/Radish/Dev/GA_WDI/in-class/node/+sails/bloggy3/api/policies/sessionAuth.js",
+		"/C/Users/Radish/Dev/Compass/materialize-src/sass/components/_waves.scss",
+		"/C/Users/Radish/Dev/GA_WDI/in-class/node/+sails/bloggy3/assets/styles/zzz_app.css",
+		"/C/Users/Radish/Dev/GA_WDI/in-class/node/+sails/bloggy3/config/blueprints.js",
+		"/C/Users/Radish/Dev/GA_WDI/in-class/CS data structures/linked_list.rb",
+		"/C/Users/Radish/Dev/GA_WDI/in-class/CS data structures/power_digit_sum.rb",
+		"/C/Users/Radish/Dev/Compass/Arcane/config.rb",
+		"/C/Users/Radish/Dev/Compass/Arcane/sass/_variables.scss",
+		"/C/Users/Radish/Dev/Compass/Arcane/css/arcane.css",
+		"/C/Users/Radish/Dev/Compass/bootswatch/paper/variables.less",
+		"/C/Users/Radish/Dev/Compass/Arcane/sass/_theme.scss",
+		"/C/Users/Radish/Dev/Compass/Arcane/sass/_mixins.scss",
+		"/C/Users/Radish/Dev/Compass/Arcane/sass/_base.scss",
+		"/C/Users/Radish/Dev/Compass/Arcane/sass/arcane.scss",
+		"/C/Users/Radish/Dev/Compass/Arcane/test.html",
+		"/C/Users/Radish/Dev/Compass/bootstrap_col_16.css",
+		"/C/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/bootstrap-sass-3.3.5/assets/stylesheets/bootstrap/_theme.scss",
+		"/C/Users/Radish/Dev/Compass/Arcane/formula.txt",
+		"/C/Users/Radish/Dev/Compass/Arcane/sass/_reset.scss",
+		"/C/Users/Radish/Dev/GA_WDI/Instigatr/compass/sass/_base.scss",
+		"/C/Users/Radish/Dev/GA_WDI/Instigatr/compass/sass/instigatr-debate.scss",
+		"/C/Users/Radish/Dev/GA_WDI/Instigatr/public/style/aboutpage.css",
+		"/C/Users/Radish/Dev/GA_WDI/Instigatr/public/style/homepagestyle.css",
+		"/C/Users/Radish/Dev/GA_WDI/Instigatr/config/config.json",
+		"/C/Users/Radish/Dev/GA_WDI/Instigatr/package.json",
+		"/C/Users/Radish/Dev/GA_WDI/Instigatr/views/layout.ejs",
+		"/C/Users/Radish/Dev/GA_WDI/Instigatr/controllers/mainController.js",
+		"/C/Users/Radish/Dev/GA_WDI/Instigatr/controllers/postsController.js",
+		"/C/Users/Radish/Dev/GA_WDI/Instigatr/public/script/debate.js",
+		"/C/Users/Radish/Dev/GA_WDI/Instigatr/index.js",
+		"/C/Users/Radish/Dev/GA_WDI/Instigatr/views/main/about.ejs",
+		"/C/Users/Radish/Dev/GA_WDI/Instigatr/views/main/home.ejs",
+		"/C/Users/Radish/Dev/GA_WDI/Instigatr/public/script/homepage.js",
+		"/C/Users/Radish/Dev/GA_WDI/Instigatr/models/index.js",
+		"/C/Users/Radish/Dev/GA_WDI/Instigatr/Instigatr/README.md",
+		"/C/Users/Radish/Dev/GA_WDI/Instigatr/Instigatr/compass/sass/_instigatr_components.scss",
+		"/C/Users/Radish/Dev/GA_WDI/Instigatr/Instigatr/views/tags/search.ejs",
+		"/C/Users/Radish/Dev/GA_WDI/Instigatr/Instigatr/views/posts/show.ejs",
+		"/C/Users/Radish/Dev/GA_WDI/Instigatr/Instigatr/views/layout.ejs",
+		"/C/Users/Radish/Dev/GA_WDI/Instigatr/Instigatr/public/script/debate.js",
+		"/C/Users/Radish/Dev/GA_WDI/Instigatr/Instigatr/views/main/chron.ejs",
+		"/C/Users/Radish/Dev/GA_WDI/Instigatr/Instigatr/views/main/about.ejs",
+		"/C/Users/Radish/Dev/GA_WDI/Instigatr/Instigatr/controllers/mainController.js",
+		"/C/Users/Radish/Dev/GA_WDI/Instigatr/Instigatr/views/main/home.ejs",
+		"/C/Users/Radish/Dev/GA_WDI/Instigatr/Instigatr/views/main/allTime.ejs",
+		"/C/Users/Radish/Dev/GA_WDI/Instigatr/Instigatr/public/style/about.css",
+		"/C/Users/Radish/Dev/GA_WDI/Instigatr/public/style/backgroundvideo.css",
+		"/C/Users/Radish/Dev/GA_WDI/Instigatr/models/vote.js",
+		"/C/Users/Radish/Dev/GA_WDI/Instigatr/controllers/tagsController.js",
+		"/C/Users/Radish/Dev/GA_WDI/Instigatr/views/about.ejs",
+		"/C/Users/Radish/Dev/GA_WDI/Instigatr/compass/sass/_instigatr_vars_after.scss",
+		"/C/Users/Radish/Dev/GA_WDI/Instigatr/compass/sass/_instigatr_vars_before.scss",
+		"/C/Users/Radish/Dev/GA_WDI/Instigatr/public/style/instigatr-news.css",
+		"/C/Users/Radish/Dev/GA_WDI/Instigatr/compass/sass/_instigatr_mixin.scss",
+		"/C/Users/Radish/Dev/GA_WDI/Instigatr/public/stylesheets/homepagestyle.css",
+		"/C/Users/Radish/Dev/GA_WDI/Instigatr/models/message.js",
+		"/C/Users/Radish/Dev/GA_WDI/Instigatr/models/post.js",
+		"/C/Users/Radish/Dev/GA_WDI/Bequarked/js/game.js",
+		"/C/Users/Radish/Dev/npm/stampedLog/test.txt",
+		"/C/Users/Radish/Dev/npm/stampedLog/index.js",
+		"/C/Users/Radish/Dev/GA_WDI/Instigatr/compass/sass/modules/_normalize.scss",
+		"/C/Users/Radish/Dev/GA_WDI/Instigatr/compass/sass/instigatr-ink-main.scss",
+		"/C/Users/Radish/Dev/GA_WDI/Instigatr/testdb.js",
+		"/C/Users/Radish/Dev/GA_WDI/Instigatr/controllers/authController.js",
+		"/C/Users/Radish/Dev/GA_WDI/Instigatr/compass/sass/_instigatr_components.scss",
+		"/C/Users/Radish/Dev/GA_WDI/Instigatr/compass/sass/modules/_typography.scss",
+		"/C/Users/Radish/Dev/GA_WDI/Instigatr/compass/sass/config/_colors.scss",
+		"/C/Users/Radish/Dev/GA_WDI/Instigatr/compass/sass/config/_typography.scss",
+		"/C/Users/Radish/Dev/GA_WDI/Instigatr/views/shared/usrOptions.ejs",
+		"/C/Users/Radish/Dev/GA_WDI/Instigatr/models/user.js",
+		"/C/Users/Radish/Dev/GA_WDI/Instigatr/controllers/usersController.js",
+		"/C/Users/Radish/Dev/GA_WDI/Instigatr/migrations/20150817134816-create-message.js",
+		"/C/Users/Radish/Dev/GA_WDI/movie_thing/public/style.css",
+		"/C/Users/Radish/Dev/GA_WDI/Instigatr/stampedLog.js",
+		"/C/Users/Radish/Dev/GA_WDI/in-class/node/async_test/async_test1.js",
+		"/C/Users/Radish/Dev/GA_WDI/Instigatr/node_modules/express/lib/express.js",
+		"/C/Users/Radish/Dev/GA_WDI/Instigatr/views/users/settings.ejs",
+		"/C/Users/Radish/Dev/GA_WDI/Instigatr/Instigatr.sublime-project",
+		"/C/Users/Radish/Dev/GA_WDI/Instigatr/views/main/404.ejs",
+		"/C/Users/Radish/Dev/GA_WDI/Instigatr/views/404.ejs",
+		"/C/Users/Radish/Run/forebat.bat",
+		"/C/Users/Radish/Dev/GA_WDI/Instigatr/forebat.bat",
+		"/C/Users/Radish/Dev/GA_WDI/Instigatr/controllers/authController.radishified.js",
+		"/C/Users/Radish/Dev/GA_WDI/movie_thing/helpers/stampedLog.js",
+		"/C/Users/Radish/Dev/GA_WDI/Instigatr/views/posts/show.ejs",
+		"/C/Users/Radish/AppData/Roaming/Sublime Text 3/Packages/User/bh_core.sublime-settings",
+		"/C/Users/Radish/Dev/GA_WDI/Instigatr/controllers/auth.js",
+		"/C/Users/Radish/Dev/GA_WDI/WDI_SEA_03_NOTES/week_07_more_express/day_03_auth/examples/auth_lab_complete/models/user.js",
+		"/C/Users/Radish/Dev/GA_WDI/Instigatr/models/usersagainstposts.js",
+		"/C/Users/Radish/Dev/GA_WDI/Instigatr/models/usersforposts.js",
+		"/C/Users/Radish/Dev/GA_WDI/Instigatr/migrations/20150816104058-create-users-posts-for.js",
+		"/C/Users/Radish/Dev/GA_WDI/Instigatr/migrations/20150816104113-create-users-posts-against.js"
+	],
+	"find":
+	{
+		"height": 31.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": true,
+		"find_history":
+		[
+			"a",
+			"RADISH",
+			"\\$modelValue",
+			"$modelValue",
+			"collapse",
+			"collapsed",
+			"show",
+			"showNotes",
+			"totalTasks",
+			"TotalTasks",
+			"path",
+			"file",
+			"console.log\\('HERE'",
+			"files",
+			"ngModel",
+			"List.totalTasks",
+			"bold",
+			"span",
+			"uiTree\\b",
+			"uiTree",
+			"TreeNodeController",
+			"toggle",
+			"list, ",
+			"['\"]json['\"]|toJson",
+			"['\"]json['\"]|jsonFilter",
+			"['\"]json['\"]",
+			"argument",
+			"list",
+			"ng-model",
+			"\\blist\\b",
+			"return *$",
+			"span",
+			"id",
+			"nestTask",
+			"data",
+			"post",
+			"people",
+			"person",
+			"ContactInfo",
+			"person",
+			"ContactInfo",
+			"bloggyApp",
+			"remove",
+			"remove\\((?!\\))",
+			"remove",
+			"\\bnode\\.",
+			"node in",
+			"nodes",
+			"'nodes'",
+			"removed",
+			"drag",
+			"(?<=col-\\w\\w-)\\d+",
+			"function \\(",
+			"login",
+			"next",
+			"songSelected",
+			"searchTerm",
+			"13",
+			", test_base",
+			"grid",
+			"bttn-",
+			"button",
+			"form",
+			"button",
+			"#",
+			"small",
+			"htop",
+			"font-stack-arcane-hmid",
+			"font-stack-arcane-body",
+			"body",
+			": {2,}",
+			"family",
+			"champ",
+			"getIsChamp",
+			"socket.post",
+			"socket.post.id",
+			"socket.post",
+			"post",
+			"\\bsockets\\b",
+			"socket.post",
+			"champion",
+			"loopSocket",
+			"socketsInLine|removeUserSocketFromLine",
+			"userInLine",
+			"removeUserSocketFromLine|socketsInLine",
+			"removeSocketFromLine",
+			"removedUser",
+			"removeUserFromLine",
+			"socketsInLine",
+			"userInLine",
+			"<p",
+			"p",
+			"id='about",
+			"id=\"about\"",
+			"thumbs",
+			"vote",
+			"choose-side",
+			"2em",
+			"padding",
+			"about",
+			"rate",
+			"debate-me",
+			"margin-bottom",
+			"h4",
+			"champion",
+			"disable",
+			"h3",
+			"vote",
+			"champion",
+			"back-edge",
+			"css-mainPagePostDiv",
+			"span",
+			"disabled",
+			"\\bpost\\b",
+			"html",
+			"wanna-join",
+			"socket.side",
+			"shift",
+			"placeinline",
+			"handleLineShift",
+			"ordina",
+			"debateChat = ",
+			"scroll",
+			"hidden",
+			"(?<!-)\\bnews\\b(?!-)",
+			"\\bnews\\b",
+			"column-group",
+			"becomeCham"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": true,
+		"regex": true,
+		"replace_history":
+		[
+			"hideNotes",
+			"// console.log('HERE'",
+			"",
+			"data",
+			"list",
+			"quicklistApp",
+			"task.",
+			"task in",
+			"subtasks",
+			"'subtasks'",
+			"function(",
+			"",
+			": ",
+			"socket.postId",
+			"removeUserSocketFromLine",
+			"removeSocketFromLine",
+			"wanna-join-for",
+			"wanna-join-against",
+			".html",
+			"\\3",
+			"$+{indent}",
+			"store this function to call",
+			"",
+			"sio",
+			"socketio",
+			"req.session.userId",
+			"$debate-msg-padding",
+			".back-fill.",
+			".back-fill",
+			"console.stampedLog",
+			"shadow-border-",
+			".shadow-border-",
+			"td",
+			"fav",
+			"postgresql",
+			"-blur",
+			"",
+			"response",
+			"request",
+			"{error: err.message}",
+			".catch(",
+			".then",
+			"glow-strong",
+			"glow-mild",
+			"glow-active-text-",
+			"glow-hover-text-",
+			"glow-hover-text",
+			"glow-active",
+			"glow-hover",
+			"$active-glow-spread",
+			"$hover-glow-spread",
+			"request",
+			"response",
+			"request",
+			"gameSquares",
+			"removeMatches",
+			"neighboorInDir",
+			"up",
+			"B",
+			"arrOfSquares",
+			"findMatchesTo",
+			"dirToSkip\\1 = ",
+			"findMatchesInDirTo",
+			"grav-container",
+			"currSquare",
+			"makeGridKey",
+			"CSS",
+			"ring-red ",
+			"ring-red",
+			"my-turn",
+			"Blue",
+			"\\1",
+			";\n    ",
+			"\n{",
+			"p",
+			"<span>This is an awesome product one description.</span>",
+			"outputImage.src",
+			"ramaItems",
+			"",
+			", ",
+			"",
+			"numInput",
+			"num",
+			"letter",
+			"temp",
+			"argv[3]",
+			"pluralMe",
+			"console.log",
+			"\",\"",
+			"\\1\n",
+			"```\n//// ANSWER ////",
+			"```\n**ANSWER**",
+			"    \\1 : \\2,",
+			""
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 24.0
+	},
+	"input":
+	{
+		"height": 40.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "flask_react.Radish.sublime-project",
+	"replace":
+	{
+		"height": 58.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 87.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 588.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": false,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 276.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
