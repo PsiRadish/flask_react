@@ -12,6 +12,9 @@ module.exports = React.createClass({displayName: "exports",
     getOneFighter: function(){
         var self = this;
     },
+    componentWillMount: function(){
+        this.getAllFighters();
+    },
     getAllFighters: function(){
         var self = this;
         console.log('getAllFighters has been called');
@@ -51,8 +54,6 @@ module.exports = React.createClass({displayName: "exports",
         return (
             React.createElement("div", null, 
                 React.createElement(Navigation, null), 
-
-                React.createElement("button", {onClick: this.getAllFighters}, "get fighters"), 
                 React.createElement(ResultList, {fighters: this.state.fighters})
             )
         )
@@ -101,6 +102,8 @@ module.exports = React.createClass({displayName: "exports",
     }
 });
 
+// post to api/fighter
+
 },{"react":318}],3:[function(require,module,exports){
 var React = require('React');
 
@@ -115,20 +118,31 @@ module.exports = React.createClass({displayName: "exports",
             )
     });
     return (
-      React.createElement("div", {class: "thumbnail"}, 
+            React.createElement("div", {class: "well"}, 
 
-            React.createElement("div", {className: "col-xs-6 col-sm-6 col-md-6 col-lg-6"}, 
-                React.createElement("h2", null, React.createElement("a", {href: '/api/fighter/'+ item.id}, item.name)), 
-                React.createElement("h3", null, item.blood_type), 
-                React.createElement("h3", null, item.gender), 
-                React.createElement("div", {className: "thumb"}, React.createElement("img", {src: item.img_src}))
-            ), 
-            React.createElement("div", {className: "col-xs-6 col-sm-6 col-md-6 col-lg-6"}, 
-                React.createElement("ul", null, 
-                    moveList
+                React.createElement("tr", null, 
+                    React.createElement("td", null, 
+                        React.createElement("h2", null, React.createElement("a", {href: '/api/fighter/'+ item.id}, item.name)), 
+                        React.createElement("div", {className: "thumb"}, 
+                            React.createElement("img", {src: item.img_src})
+                        )
+                    ), 
+                        React.createElement("td", null, 
+                        React.createElement("h5", null, "blood type:"), 
+                        React.createElement("h4", null, item.blood_type)
+                    ), 
+                    React.createElement("td", null, 
+                        React.createElement("h5", null, "gender:"), 
+                        React.createElement("h4", null, item.gender), 
+                        React.createElement("div", {className: "overflow-list-box"}, 
+                            React.createElement("ul", null, 
+                                moveList
+                            )
+                        )
+                    )
                 )
             )
-    )
+
 
     );
   }
@@ -168,8 +182,8 @@ module.exports = React.createClass({displayName: "exports",
   render: function(){
     var fighterResult = this.props.fighters.map(function(fighter,idx){
       return (
-        React.createElement("div", {class: "col-xs-3 col-sm-3 col-md-3 col-lg-3"}, 
-        React.createElement(FighterResult, {fighter: fighter, key: idx})
+        React.createElement("div", {class: "well"}, 
+          React.createElement(FighterResult, {fighter: fighter, key: idx})
 
         )
         )

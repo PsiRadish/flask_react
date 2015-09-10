@@ -10,8 +10,8 @@ module.exports = React.createClass({
   render: function(){
     var fighterResult = this.props.fighters.map(function(fighter,idx){
       return (
-        <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
-        <FighterResult fighter={fighter} key={idx} />
+        <div class="well">
+          <FighterResult fighter={fighter} key={idx} />
 
         </div>
         )

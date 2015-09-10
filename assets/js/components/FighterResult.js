@@ -11,20 +11,31 @@ module.exports = React.createClass({
             )
     });
     return (
-      <div class="thumbnail">
+            <div class="well">
 
-            <div className="col-xs-6 col-sm-6 col-md-6 col-lg-6">
-                <h2><a href={'/api/fighter/'+ item.id}>{item.name}</a></h2>
-                <h3>{item.blood_type}</h3>
-                <h3>{item.gender}</h3>
-                <div className="thumb"><img src={item.img_src} /></div>
+                <tr>
+                    <td>
+                        <h2><a href={'/api/fighter/'+ item.id}>{item.name}</a></h2>
+                        <div className="thumb">
+                            <img src={item.img_src} />
+                        </div>
+                    </td>
+                        <td>
+                        <h5>blood type:</h5>
+                        <h4>{item.blood_type}</h4>
+                    </td>
+                    <td>
+                        <h5>gender:</h5>
+                        <h4>{item.gender}</h4>
+                        <div className="overflow-list-box">
+                            <ul>
+                                {moveList}
+                            </ul>
+                        </div>
+                    </td>
+                </tr>
             </div>
-            <div className="col-xs-6 col-sm-6 col-md-6 col-lg-6">
-                <ul>
-                    {moveList}
-                </ul>
-            </div>
-    </div>
+
 
     );
   }

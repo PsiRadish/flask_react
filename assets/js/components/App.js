@@ -11,6 +11,9 @@ module.exports = React.createClass({
     getOneFighter: function(){
         var self = this;
     },
+    componentWillMount: function(){
+        this.getAllFighters();
+    },
     getAllFighters: function(){
         var self = this;
         console.log('getAllFighters has been called');
@@ -50,8 +53,6 @@ module.exports = React.createClass({
         return (
             <div>
                 <Navigation />
-
-                <button onClick={this.getAllFighters}>get fighters</button>
                 <ResultList fighters={this.state.fighters}/>
             </div>
         )

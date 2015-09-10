@@ -39,6 +39,7 @@ module.exports = React.createClass({
     }
 });
 
+// post to api/fighter
 
 
 
