@@ -14,24 +14,129 @@
   <link rel="stylesheet" href="style.css">
   <script src="script.js"></script>
   
+  <style type="text/css">
+  
+  .panel-body
+  {
+      padding-bottom: 0;
+  }
+  
+  .label-column
+  {
+      background-color: #337AB7;
+      color: white;
+      font-weight: bold;
+  }
+  
+  /*.panel-body img + .row .label-column
+  {
+      padding-top: 15px;
+  }*/
+  
+  .panel-body .row:last-child .label-column
+  {
+      padding-bottom: 15px;
+  }
+
+  .move-name
+  {
+      border-bottom: 1px solid #ddd;
+  }
+
+  ul.input-sequence
+  {
+      list-style: none !important;
+      padding-left: none;
+      
+      /*display: inline-block;*/
+  }
+  
+  ul.input-sequence > li
+  {
+      display: inline-block;
+      /*overflow: visible;*/
+  }
+  
+  ul.input-sequence > li + li
+  {
+      margin-left: 10px;
+  }
+  
+  ul.input-sequence > li + li::before
+  {
+      content: ",";
+      /*margin-left: -10px;*/
+      position: relative;
+      right: 10px;
+      /*font-weight: bold;*/
+      color: #666;
+      
+      /*overflow: visible;*/
+  }
+  </style>
+  
 </head>
 <body class="container">
 
 
 
 <div class="row">
+
   <div class="col-sm-5">
     <div class="panel panel-primary">
-      <header class="panel-heading">Fighter Name</header>
+      <header class="panel-heading"><h3>Fighter Name</h3></header>
       <div class="panel-body">
         <img class="img-responsive" src="https://www.iconexperience.com/_img/v_collection_png/256x256/shadow/hand_fist.png" alt="fighter image">
         <div class="row">
           <div class="col-xs-4 label-column">
-            <label></label>
+            Gender:
+          </div>
+          <div class="col-xs-8">
+            female
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-4 label-column">
+            Blood Type:
+          </div>
+          <div class="col-xs-8">
+            Ω
           </div>
         </div>
       </div>
     </div>
+  </div>
+    
+  <div class="col-sm-7">
+    <article class="well well-sm move-card">
+      <h4 class="move-name">Move Name (Strike)</h4>
+      <ul class="input-sequence">
+        <li>↠</li>
+        <li>D</li>
+      </ul>
+    </article>
+    <article class="well well-sm move-card">
+      <h4 class="move-name">Move Name (Throw)</h4>
+      <ul class="input-sequence">
+        <li>↻</li>
+        <li>C+D</li>
+      </ul>
+    </article>
+    <article class="well well-sm move-card">
+      <h4 class="move-name">Move Name (Evasive)</h4>
+      <ul class="input-sequence">
+        <li>↞</li>
+        <li>G</li>
+      </ul>
+    </article>
+    <article class="well well-sm move-card">
+      <h4 class="move-name">Move Name (Ranged)</h4>
+      <ul class="input-sequence">
+        <li>Hold ← (2 sec)</li>
+        <li>→</li>
+        <li>A</li>
+      </ul>
+    </article>
   </div>
 </div>
 

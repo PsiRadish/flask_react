@@ -44,31 +44,20 @@ def one_fighter(id):
 # CREATE FIGHTER
 @app.route('/api/fighter', methods=['POST'])
 def create_fighter():
-    print('POST /api/fighter toally made it typo lol')
-    print('request.form', str(request.form))
-    
-    # fighter_params = { permitted_key: request.form[permitted_key] for permitted_key in ['name', 'gender', 'blood_type', 'img_src']}
+        
     fighter_params = {}
-    
     for permitted_key in ['name', 'gender', 'blood_type', 'img_src']:
         if permitted_key in request.form:
             fighter_params[permitted_key] = request.form[permitted_key]            
     
-    print('fighter_params', str(fighter_params))
     new_fighter = Fighter(**fighter_params)
     
-    print('about to try')
-    
     try:
-        # print('tryin')
         new_fighter.save()
-        # print('wait wut')
         Response(json.dumps(dictify(new_fighter)), mimetype='application/json')
     except ValidationError as validation_error:
-        # print('validation_error:  ' + str(validation_error))
-        print([thing for thing in validation_error])
-        # return str(validation_error)
-        return Response(json.dumps(validation_error), mimetype='application/json')
+        errors = {'validationErrors': validation_error.to_dict()}
+        return Response(json.dumps(errors), status=400, mimetype='application/json')
 
 
 # @app.route('/stuff')
