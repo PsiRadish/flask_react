@@ -1,4 +1,36 @@
 body{
-  background: blue;
+  background: #CDFFFC;
+}
+
+div#fighterSearch {
+    margin-top:50px;
+}
+
+.thumb img {
+    width:100px;
+    margin-left:10%;
+}
+
+li {
+    text-align: left;
+    text-decoration: none;
+}
+
+.no-decorate-left {
+    text-align: left;
+    text-decoration: none;
+}
+
+.fighterCard {
+    background-color: white;
+    border-radius: 3px;
+    height:400px;
+}
+
+.overflow-list-box {
+    height: 70px;
+    overflow: auto;
+    margin-top:20px;
+    background-color:#F3E6F2;
 }
 
