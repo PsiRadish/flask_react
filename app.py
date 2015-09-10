@@ -8,7 +8,9 @@ app = Flask(__name__)
 
 def dictify(mongo_thing):
     dictified = mongo_thing.to_mongo().to_dict()
-    dictified['id'] = str(dictified.pop('_id')) # remove unJSONifiable weirdness and store id as a simple string
+    
+    if '_id' in dictified:
+        dictified['id'] = str(dictified.pop('_id')) # remove unJSONifiable weirdness and store id as a simple string
     
     return dictified
 
@@ -54,11 +56,32 @@ def create_fighter():
     
     try:
         new_fighter.save()
-        Response(json.dumps(dictify(new_fighter)), mimetype='application/json')
+        return Response(json.dumps(dictify(new_fighter)), mimetype='application/json')
     except ValidationError as validation_error:
         errors = {'validationErrors': validation_error.to_dict()}
         return Response(json.dumps(errors), status=400, mimetype='application/json')
 
+# ADD MOVE
+@app.route('/api/fighter/<id>/move', methods=['POST'])
+def add_move(id):
+    fighter = Fighter.objects(id=id)[0]
+    
+    move_params = {}
+    for permitted_key in ['name', 'attack_type', 'input_seq']:
+        if permitted_key in request.form:
+            move_params[permitted_key] = request.form[permitted_key]
+    
+    if 'input_seq' in move_params:
+        move_params['input_seq'] = move_params['input_seq'].split(', ')   # expecting input_seq as ",<space>"-separated list
+    
+    new_move = fighter.moves.create(**move_params)
+    
+    try:
+        fighter.save()
+        return Response(json.dumps(dictify(new_move)), mimetype='application/json')
+    except ValidationError as validation_error:
+        errors = {'validationErrors': validation_error.to_dict()}  # put validation errors under key 'validationErrors' so they can be more easily checked for on the front-end
+        return Response(json.dumps(errors), status=400, mimetype='application/json')
 
 # @app.route('/stuff')
 # def stuff():
