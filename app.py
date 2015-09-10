@@ -1,5 +1,5 @@
 import json
-from flask import Flask
+from flask import Flask, Response
 
 from models.fighter import *
 connect('Ultimate_Showdown')
@@ -15,8 +15,21 @@ def static_path(path):
   return app.send_static_file(path)
 
 @app.route('/api/fighter', methods=['GET'])
-def index_fighters():
-    return Fighter.objects().to_json()
+def all_fighters():
+    # fighters_mong = Fighter.objects()
+    fighters = [fighter.to_mongo().to_dict() for fighter in Fighter.objects()]
+    
+    for fighter in fighters:
+        fighter['id'] = str(fighter.pop('_id')) # remove unJSONifiable weirdness and store id as a simple string
+    
+    return Response(json.dumps(fighters), mimetype='application/json')
+
+@app.route('/api/fighter/<id>', methods=['GET'])
+def one_fighter(id):
+    fighter = Fighter.objects(id=id)[0].to_mongo().to_dict()
+    fighter['id'] = str(fighter.pop('_id')) # remove unJSONifiable weirdness and store id as a simple string
+    
+    return Response(json.dumps(fighter), mimetype='application/json')
 
 # @app.route('/stuff')
 # def stuff():
