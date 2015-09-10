@@ -41,25 +41,27 @@ if len(Fighter.objects(name="Stephen Colbert")) == 0:
                               moves=[Move(**colbert_move1), Move(**colbert_move2), Move(**colbert_move3)])
     Stephen_Colbert.save()
 
-if len(Fighter.objects(name="Emily Dickinson")) == 0:
-    dickinson_move1 = \
+Fighter.objects(name="Emily Dickinson")[0].delete()
+    
+if len(Fighter.objects(name="Jane Austen")) == 0:
+    austen_move1 = \
     {
         'name': "Pride",
         'attack_type': "Strike",
         'input_seq': ['↠', 'D']
     }
-    dickinson_move2 = \
+    austen_move2 = \
     {
         'name': "Prejudice",
         'attack_type': "Throw",
         'input_seq': ['↻', 'C+D']
     }
-    Emily_Dickinson = Fighter(name="Emily Dickinson",
+    Jane_Austen = Fighter(name="Jane Austen",
                               gender="female",
                               # blood_type="",
-                              img_src="http://www.poets.org/sites/default/files/styles/286x289/public/images/biographies/155_EmilyDickinsonSmall.jpg?itok=cQkQwNTK",
-                              moves=[Move(**dickinson_move1), Move(**dickinson_move2)])
-    Emily_Dickinson.save()
+                              img_src="https://upload.wikimedia.org/wikipedia/commons/d/d4/Jane_Austen_coloured_version.jpg",
+                              moves=[Move(**austen_move1), Move(**austen_move2)])
+    Jane_Austen.save()
 
 
 """
