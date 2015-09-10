@@ -2,10 +2,14 @@ var React = require('react');
 var SearchForm = require('./SearchForm');
 var Navigation = require('./Navigation');
 var CreateFighter = require('./CreateFighter');
+var ResultList = require('./ResultList');
 
 module.exports = React.createClass({
     getInitialState: function(){
         return {createdFighter:'',newFighter:'',fighters:[]}
+    },
+    getOneFighter: function(){
+        var self = this;
     },
     getAllFighters: function(){
         var self = this;
@@ -14,41 +18,41 @@ module.exports = React.createClass({
         ajax.addEventListener('load',function(){
             try {
                 var data = JSON.parse(this.responseText);
+                // console.log(data);
                 self.setState({fighters:data});
-                console.log(this.state.fighters);
+                console.log(self.state.fighters);
             } catch(e) {
-                console.log('something went wrong with request')
+                console.log(e)
                 self.setState({fighters:[]});
             }
         });
-        ajax.open('GET','/api/fighter',true);
+        ajax.open('GET','/api/fighter');
         ajax.send();
     },
     createFighter: function(fighter){
-        this.setState({newFighter:fighter});
-        // console.log(this.state.newFighter.lastName);
-        var self = this;
-        var ajax = new XMLHttpRequest();
-        ajax.addEventListener('load',function(){
-            try {
-                var data = JSON.parse(this.responseText);
-                self.setState({createdFighter:data.results});
-            } catch(e) {
-                self.setState({createdFighter:''});
-            }
-        });
-        ajax.open('POST','our api url' + '/:' + newFighter.firstName + '/:' + newFighter.lastName + '/:' + newFighter.moves + '/:' + newFighter.description + '/:' + newFighter.imgUrl);
-        ajax.send();
+        // this.setState({newFighter:fighter});
+        // // console.log(this.state.newFighter.lastName);
+        // var self = this;
+        // var ajax = new XMLHttpRequest();
+        // ajax.addEventListener('load',function(){
+        //     try {
+        //         var data = JSON.parse(this.responseText);
+        //         self.setState({createdFighter:data.results});
+        //     } catch(e) {
+        //         self.setState({createdFighter:''});
+        //     }
+        // });
+        // ajax.open('POST','our api url' + '/:' + newFighter.firstName + '/:' + newFighter.lastName + '/:' + newFighter.moves + '/:' + newFighter.description + '/:' + newFighter.imgUrl);
+        // ajax.send();
 
     },
     render: function(){
         return (
             <div>
                 <Navigation />
-                <SearchForm />
-                <CreateFighter onUpdate={this.createFighter}/>
-                <button onClick={this.getAllFighters}>get fighters</button>
 
+                <button onClick={this.getAllFighters}>get fighters</button>
+                <ResultList fighters={this.state.fighters}/>
             </div>
         )
     }
